@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">SecurePass</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Password Manager</h1>
+        <p>Your security is our top priority. With SecurePass, you can safely store and manage all your passwords in one
+            place. Say goodbye to forgotten passwords and hello to a more secure and convenient digital life.</p>
+        <h2>Your Passwords</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <br><br>
+        <h2>Add Your Website</h2>
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required>
+        <br><br>
+
+        <h2>Add Your Username and Password</h2>
+        <form id="password-form" action="/submit" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+            <input type="button" value="Submit" class="btn">
+        </form>
+    </div>
+    <script src="first.js"></script>
+</body>
+
+</html>
